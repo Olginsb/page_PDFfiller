@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+    head
+        title Page
+        script(type='text/javascript')
+        link(rel="stylesheet", href="../css/style.css")
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+    body
+        #container.col
+            .top-block
+                .top-block__back
+                    img(src='../../img/svg/chevron-back-single.svg')
+                .top-block__title
+                    .top-block__title__text Import document to your Flow
+                    .top-block__title__close
+                        img(src='../../img/svg/cross-lg.svg')
+            .wrap-block
+                include navigation
+                .main-block
+                    .block-row
+                        .block-row__text
+                            h1(class='block-row__text_title') Wade Wilson
+                            p(class='block-row__text_email') wadewilson@domain.com
+                        .block-row__search
+                            .block-row__search__input
+                                input(
+                                type='text'
+                                placeholder='Search'
+                                )
+                            .block-row__search__exit
+                                img(src='../../img/svg/logout.svg')
+                    .block-company-documents
+                        .img-folder
+                            img(src='../../img/svg/folder-colored.svg')
+                        .img-next
+                            img(src='../../img/svg/chevron-forward-single.svg')
+                        h1(class='block-company-documents__title') Company documents
+                    include table.pug
